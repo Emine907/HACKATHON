@@ -5,6 +5,40 @@
     box-sizing: border-box;
 }
 
+.popup {
+    display: block; /* Başlangıçta görünür olacak şekilde */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Diğer öğelerin üzerinde görünmesini sağlar */
+}
+
+/* Popup içeriği */
+.popup-content {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;  
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Resmi popup içeriğine eklemek için stil */
+.popup-image {
+    width: 300%; /* Resmi kutuya göre genişletir */
+    height: 100%; /* Yüksekliğini orantılı olarak ayarlar */
+    border-radius: 8px; /* Resmin köşelerini yuvarlatır */
+    margin-bottom: 0px; /* Resim ile metin arasına boşluk bırakır */
+}
+
 body{
     width: 100wh;
     height: 100vh;
@@ -44,10 +78,12 @@ nav{
 
 .social-container .social-item .fa-instagram {
     margin-left: 1020px;
-    font-size: 20px; 
-    color: #E4405F;  
+    font-size: 20px;  
     transition: transform 0.3s ease;
-}
+    background-color: #e4405f;
+    color: #fff;
+    align-items: center;
+    }
 
 .social-container .social-item:hover .fa-instagram {
     transform: scale(1.5); 
@@ -132,10 +168,10 @@ nav{
      .message span:nth-child(34) { animation-delay: 3.4s; } 
      .message span:nth-child(35) { animation-delay: 3.5s; } 
      .message span:nth-child(36) { animation-delay: 3.6s; } 
-     .message span:nth-child(37) { animation-delay: 3.7s; } 
-     .message span:nth-child(38) { animation-delay: 3.8s; } 
-     .message span:nth-child(39) { animation-delay: 3.9s; } 
-     .message span:nth-child(40) { animation-delay: 4s; }
+     .message span:nth-child(37) { animation-delay: 3.5s; } 
+     .message span:nth-child(38) { animation-delay: 3.5s; } 
+     .message span:nth-child(39) { animation-delay: 3.5s; } 
+     .message span:nth-child(40) { animation-delay: 3.5s; }
 
 
 .button-container {
@@ -152,12 +188,12 @@ nav{
     font-size: 50px;
     color: white;
     margin-left: 150px;
-    background-color:transparent;
+    background-color:darksalmon;
     width: 300px;
     height: 200px;
     display: flex;
     justify-content: center;
-    border: 2px solid white
+    border: 2px solid darksalmon;
 }
 
 .filmler{
@@ -165,12 +201,12 @@ nav{
     font-size: 50px;
     color: white;
     margin-left: 250px;
-    background-color:transparent;
+    background-color:darksalmon;
     width: 300px;
     height: 200px;
     display: inline-block;
     margin-right: 10px;  
-    border: 2px solid white;
+    border: 2px solid darksalmon;
 }
 
 .öneri{
@@ -179,12 +215,12 @@ nav{
     font-size: 50px;
     color: white;
     margin-left: 400px;
-    background-color:transparent;
+    background-color:darksalmon;
     width: 300px;
     height: 200px;
     display: flex;
     position: relative;
     left: -150px;
     justify-content: center;
-    border: 2px solid white
+    border: 2px solid darksalmon;
 }
