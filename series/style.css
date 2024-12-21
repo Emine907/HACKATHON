@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    height: 170vh;
+    background-image: url(./d2470664-b793-41ae-b640-345a0df90193.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+nav{
+    width: 99.2%;
+    height: 90px;
+    background-color:darksalmon;
+    color: white;
+    display: flex;
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color:darkblue;
+}
+
+.logo-container{
+    font-size: 72px;
+    font-weight: 1000;
+}
+
+.nav-container  {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    list-style: none;
+    gap: 20px;
+    margin-left: auto;
+    font-size: 25px;
+}
+
+.nav-container .nav-link{
+    text-transform: capitalize;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s all ease-in-out;
+}
+
+.nav-container .nav-link:hover{
+    border-bottom: 2px solid darkblue;
+}
+
+.cards{
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 200px;
+    height: 360px;
+}
+
+.image{
+    width: 200px;
+    height: 270px;
+}
+
+.card .info{
+    color: white;
+}
+
