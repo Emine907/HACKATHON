@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açılır Ekran Örneği</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Açılır ekran (Popup) -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <img src="./" alt="" class="popup-image">
+            
+        </div>
+    </div>
+
+    <script>
+        // Sayfa yüklendiğinde popup'ı gösterme ve ardından kaybolmasını sağlama
+        window.onload = function() {
+            var popup = document.getElementById("popup");
+            // Popup'ı 3 saniye sonra gizle
+            setTimeout(function() {
+                popup.style.display = "none";
+            }, 3000);  // 3000 ms = 3 saniye
+        };
+    </script>
+</body>
+</html>
