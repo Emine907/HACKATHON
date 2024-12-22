@@ -90,7 +90,7 @@ textarea{
 }
 
 
-.DiziFilm label + .EvetHayır + label {
+.DiziFilm label + .EvetHayır label {
     margin-left: 20px;
     font-size: 30px;
 }

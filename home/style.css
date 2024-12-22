@@ -66,6 +66,22 @@ a{
     margin-bottom: 0px; /* Resim ile metin arasına boşluk bırakır */
 }
 
+
+
+
+
+.öneri{
+    margin-top: 15px;
+    margin-left: 50px ;
+    margin-right: 130px;
+    justify-content: center;
+    display: inline-block;
+    width: 250px;
+    height: 75px;
+    background-color: transparent;
+
+}
+
 .ana-div{
     display: flex;
     justify-content: center;
@@ -249,16 +265,5 @@ nav{
     background-color: var(--buttonBackground);
 }
 
-.öneri{
-    margin-top: 15px;
-    margin-right: 130px;
-    margin-left: 50px;
-    background-color: var(--buttonBackground);
-    color: var(--textColor) !important;
-    width: 250px;
-    height: 75px;
-    display:inline-block;
-    justify-content: center;
-   
-}
+
     
