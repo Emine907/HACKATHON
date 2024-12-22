@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
-    height: 170vh;
+    height: 210vh;
     background-image: url(./d2470664-b793-41ae-b640-345a0df90193.jpg);
     background-size: cover;
     background-position: center;
@@ -27,21 +27,87 @@ a {
     font-size: 72px;
     font-weight: 1000;
 }
+/*
+.yazi{
+    color: white;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 20px;
+    display: inline-block;
+    flex-direction: column;
+}
 
+.yazi1{
+    color: white;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 120px;
+    display: inline-block;
+}
+.yazi2{
+    color: white;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 215px;
+    display: inline-block;
+}
+.yazi3{
+    color: white;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 150px;
+    display: inline-block;
+}
+.yazi4{
+    color: white;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 190px;
+    display: inline-block;
+}
+    */
 .cards{
+    margin-top: 70px;
     display: flex;
     justify-content:space-between;
-    margin: 10px;
+    
     flex-wrap: wrap;
 }
 
+.watched-button {
+    background-color: #1269e4; /* Yeşil */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.watched-button:hover {
+    background-color: #45a049; /* Hover (üzerine gelindiğinde) yeşil tonu */
+}
+
+.watched-button.watched {
+    background-color: #d3d3d3; /* Tıklandığında gri */
+    cursor: not-allowed; /* Buton artık tıklanamaz */
+}
+
+.watched-button.watched:hover {
+    background-color: #d3d3d3; /* Tıklandığında gri tonunda hover */
+}
+
+
+
 .card{
     width: 200px;
-    height: 360px;
+    height: 410px;
 }
 
 .image{
-    width: 200px;
+    width: 20px;
     height: 270px;
 }
 
