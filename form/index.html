@@ -7,31 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="/gonder" method="post">
-        
+    <form>
         <div class="form-row">
             <p>Dizi mi Film mi izlediniz?</p>
             <div class="DiziFilm">
-              <label for=""> <input name="DiziFilm" type="radio"/> Dizi </label>
-              <label for=""> <input name="DiziFilm" type="radio"/> Film </label>
-            </div>
+                <label for="dizi">
+                  <input id="dizi" name="DiziFilm" type="radio" value="Dizi"/> Dizi
+                </label>
+                <label for="film">
+                  <input id="film" name="DiziFilm" type="radio" value="Film"/> Film
+                </label>
+              </div>
+              
           </div>
 
         <div class="form-row">
             <label>Hangi diziyi veya filmi izlediniz?</label>
             <input type="text"
-            placeholder="Dizinin veya filmin isminizi giriniz"
+            placeholder="Dizinin veya filmin ismini giriniz"
             required
             name="Dizi veya film ismi"
-            id="Dizi veya filmismi"
+            id="filmName"
             />
         </div>
 
         <div class="form-row">
           <p>Dizi veya Filmi beğendiniz mi?</p>
           <div class="EvetHayır">
-            <label for=""> <input name="EvetHayır" type="radio"/> Evet </label>
-            <label for=""> <input name="EvetHayır" type="radio"/> Hayır </label>
+            <label for="evet"> <input id="evet" name="EvetHayır" type="radio" value="Evet"/> Evet </label>
+            <label for="hayır"> <input id="hayır" name="EvetHayır" type="radio" value="Hayır"/> Hayır </label>
           </div>
         </div>
 
@@ -45,7 +49,11 @@
         
         </div>
         
-        <button type="submit">Gönder</button>
+        <button type="submit" id="gonder">Gönder</button>
     </form>
+    
+
+
+    <script src="./script.js"></script>
 </body>
 </html>

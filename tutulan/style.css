@@ -1,0 +1,14 @@
+
+.body{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 50vw;
+    height: 50vh; 
+    justify-content:center ;  
+
+}
