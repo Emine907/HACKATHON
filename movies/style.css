@@ -6,7 +6,7 @@
 
 body{
     
-    height: 225vh;
+    height: 250vh;
     background-image: url('./21.jpg');
     background-size: cover;
     background-position: center;
@@ -34,12 +34,38 @@ a{
     font-weight: 1000;
 }
 
+
+
 .cards{
+    margin-top: 70px ;
     display: flex;
     justify-content: space-between;
-    margin: 10px;
     flex-wrap: wrap;
     
+}
+.watched-button {
+    background-color:rgb(22, 139, 242); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.watched-button:hover {
+    background-color:#0cd8ef; 
+}
+
+.watched-button.watched {
+    background-color: #d3d3d3; 
+    cursor: not-allowed;
+}
+
+.watched-button.watched:hover {
+    background-color: #d3d3d3; 
 }
 
 .card{
