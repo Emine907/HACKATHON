@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto" , serif;
+    font-size: 18px;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 360px;
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow:blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.form-row > input,select,button,textarea {
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input[type = "text"]::placeholder,
+/*input[type="mesaj"]::placeholder,*/
+textarea::placeholder {
+    color:blueviolet;
+}
+/* Radio button'lar için stil */
+input[type="radio"] {
+    margin-right: 5px;
+}
+/* Buton stilini düzenleme */
+button[type="submit"] {
+    background-color:blue; /* Buton arka plan rengi */
+    color:khaki; /* Yazı rengi */
+    padding: 12px 24px; /* İç boşluk */
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Köşe yuvarlama */
+    font-size: 16px; /* Yazı büyüklüğü */
+    cursor: pointer; /* Fare ile üzerine gelindiğinde el simgesi */
+    width: 100%; /* Butonun genişliği */
+    transition: background-color 0.3s ease; /* Yumuşak geçiş */
+}
+
+/* Butonun hover (fare ile üzerine gelindiğinde) durumu */
+button[type="submit"]:hover {
+    background-color: blue; /* Hover rengi */
+}
+
+/* Buton tıklanmışken (active) durumu */
+button[type="submit"]:active {
+    background-color: blue; /* Tıklama rengi */
+    transform: translateY(2px); 
+
+
+
+
+
+textarea{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-height: 200px;
+    max-width: 100px;
+    resize: vertical;
+}
+
+.DiziFilm label, .EvetHayır label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.DiziFilm label + .EvetHayır + label {
+    margin-left: 20px;
+    font-size: 30px;
+}

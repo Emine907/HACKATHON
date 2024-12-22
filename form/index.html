@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/gonder" method="post">
+        
+        <div class="form-row">
+            <p>Dizi mi Film mi izlediniz?</p>
+            <div class="DiziFilm">
+              <label for=""> <input name="DiziFilm" type="radio"/> Dizi </label>
+              <label for=""> <input name="DiziFilm" type="radio"/> Film </label>
+            </div>
+          </div>
+
+        <div class="form-row">
+            <label>Hangi diziyi veya filmi izlediniz?</label>
+            <input type="text"
+            placeholder="Dizinin veya filmin isminizi giriniz"
+            required
+            name="Dizi veya film ismi"
+            id="Dizi veya filmismi"
+            />
+        </div>
+
+        <div class="form-row">
+          <p>Dizi veya Filmi beğendiniz mi?</p>
+          <div class="EvetHayır">
+            <label for=""> <input name="EvetHayır" type="radio"/> Evet </label>
+            <label for=""> <input name="EvetHayır" type="radio"/> Hayır </label>
+          </div>
+        </div>
+
+        <div class="form-row">
+            <label for="mesaj">Mesaj</label>
+            <textarea
+            name="mesaj"
+            id="mesaj"
+            placeholder="Mesajınızı giriniz!"
+            ></textarea>
+        
+        </div>
+        
+        <button type="submit">Gönder</button>
+    </form>
+</body>
+</html>
