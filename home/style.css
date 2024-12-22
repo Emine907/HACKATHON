@@ -48,6 +48,21 @@ body{
     background-repeat: no-repeat; 
 }
 
+
+
+.öneri{
+    margin-top: 15px;
+    margin-left: 50px ;
+    margin-right: 130px;
+    justify-content: center;
+    display: inline-block;
+    width: 250px;
+    height: 75px;
+    background-color: transparent;
+
+}
+
+
 .ana-div{
     display: flex;
 }
