@@ -1,0 +1,19 @@
+:root {
+    --border-radius: 5px;
+    --border-radius2x: 10px;
+
+}
+
+/* Dark tema */
+body[data-theme="dark"] {
+    --backgroundColor: #121212;
+    --textColor: #ffffff;
+    --buttonBackground: rgba(0,0,0, 0.6);
+}
+
+/* Dark tema */
+body[data-theme="light"] {
+    --backgroundColor: #121212;
+    --textColor: #000;
+    --buttonBackground: rgba(255, 255, 255, .7);
+}
